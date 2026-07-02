@@ -1108,7 +1108,7 @@ function updateHUD() {
       setTimeout(() => {
         $('#loading-screen').classList.add('hidden');
         $('#app').classList.remove('hidden');
-        showScreen('home');
+        showScreen('screen-home');
       }, 350);
 
       /* register SW for PWA */
