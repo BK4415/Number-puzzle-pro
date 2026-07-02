@@ -64,7 +64,7 @@ button { font-family: inherit; cursor:pointer; }
   background: var(--bg);
 }
 .loader-logo { width: 110px; height:110px; border-radius:0%; box-shadow: var(--shadow-lg); }
-.loader p { color: var(--text-soft); letter-spacing:1px; }
+.loader p { color: var(--text-soft); letter-spacing:1px; 
 }
 
 /* ===== APP SHELL ===== */
