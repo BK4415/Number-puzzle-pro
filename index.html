@@ -24,30 +24,96 @@
 
   <!-- LEFT INFO PANEL -->
   <aside id="info-panel" class="side-panel side-panel-left" aria-label="Information">
-    <header class="panel-header">
-      <h2>Information</h2>
-      <button class="icon-btn" data-close-panel="info-panel" aria-label="Close">✕</button>
-    </header>
-    <nav class="panel-list">
-      <a href="pages/about.html" target="_blank" rel="noopener">📖 About The App</a>
-      <a href="pages/guide.html" target="_blank" rel="noopener">🎯 How To Play</a>
-      <a href="pages/privacy.html" target="_blank" rel="noopener">🔒 Privacy Policy</a>
-      <a href="pages/privacy.html#terms" target="_blank" rel="noopener">📜 Terms &amp; Conditions</a>
-      <a href="#" id="install-app-link">⬇️ Install App</a>
-      <a href="https://play.google.com" target="_blank" rel="noopener">▶️ Play Store</a>
-      <a href="mailto:dev@numberpuzzlepro.app">✉️ Contact Developer</a>
-      <div class="panel-meta">
-        <p><strong>Version</strong> <span id="app-version">1.0.0</span></p>
-        <p><strong>Changelog</strong> — Initial release</p>
-      </div>
-      <div class="panel-actions">
-        <button class="btn btn-ghost" id="btn-export-data">Export Data</button>
-        <button class="btn btn-ghost" id="btn-import-data">Import Backup</button>
-        <input type="file" id="import-file" accept="application/json" hidden />
-        <button class="btn btn-danger" id="btn-reset-data">Reset All Data</button>
-      </div>
-    </nav>
-  </aside>
+  <!-- LEFT INFO PANEL -->
+<aside id="info-panel" class="side-panel side-panel-left" aria-label="Information">
+  <header class="panel-header">
+    <h2>Information</h2>
+    <button class="icon-btn" data-close-panel="info-panel" aria-label="Close">
+      <!-- X Icon -->
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M18 6L6 18M6 6l12 12"/>
+      </svg>
+    </button>
+  </header>
+
+  <nav class="panel-list">
+
+    <a href="pages/about.html" target="_blank" rel="noopener">
+      <!-- Book -->
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5V4.5A2.5 2.5 0 0 1 6.5 2z"/>
+      </svg>
+      About The App
+    </a>
+
+    <a href="pages/guide.html" target="_blank" rel="noopener">
+      <!-- Target -->
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="8"/>
+        <circle cx="12" cy="12" r="4"/>
+        <circle cx="12" cy="12" r="1"/>
+      </svg>
+      How To Play
+    </a>
+
+    <a href="pages/privacy.html" target="_blank" rel="noopener">
+      <!-- Shield -->
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+      </svg>
+      Privacy Policy
+    </a>
+
+    <a href="pages/privacy.html#terms" target="_blank" rel="noopener">
+      <!-- File -->
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+        <path d="M14 2v6h6"/>
+      </svg>
+      Terms &amp; Conditions
+    </a>
+
+    <a href="#" id="install-app-link">
+      <!-- Download -->
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 3v12"/>
+        <path d="M7 10l5 5 5-5"/>
+        <path d="M5 21h14"/>
+      </svg>
+      Install App
+    </a>
+
+    <a href="https://play.google.com" target="_blank" rel="noopener">
+      <!-- Play -->
+      <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+        <polygon points="5,3 20,12 5,21"/>
+      </svg>
+      Play Store
+    </a>
+
+    <a href="mailto:dev@numberpuzzlepro.app">
+      <!-- Mail -->
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M4 4h16v16H4z"/>
+        <path d="M4 6l8 6 8-6"/>
+      </svg>
+      Contact Developer
+    </a>
+
+    <div class="panel-meta">
+      <p><strong>Version</strong> <span id="app-version">1.0.0</span></p>
+      <p><strong>Changelog</strong> — Initial release</p>
+    </div>
+
+    <div class="panel-actions">
+      <button class="btn btn-ghost" id="btn-export-data">Export Data</button>
+      <button class="btn btn-ghost" id="btn-import-data">Import Backup</button>
+      <input type="file" id="import-file" accept="application/json" hidden />
+      <button class="btn btn-danger" id="btn-reset-data">Reset All Data</button>
+    </div>
+  </nav>
+</aside>
 
   <!-- RIGHT DASHBOARD PANEL -->
   <aside id="dashboard-panel" class="side-panel side-panel-right" aria-label="Dashboard">
@@ -63,18 +129,41 @@
   <!-- BACKDROP -->
   <div id="panel-backdrop" class="panel-backdrop"></div>
 
-  <!-- ============ HOME SCREEN ============ -->
-  <section id="screen-home" class="screen screen-home active">
-    <header class="topbar">
-      <button class="icon-btn" id="open-info" aria-label="Open info">☰</button>
-      <div class="brand">
-        <img src="assets/icons/logo.png" alt="" />
-        <h1>Number Puzzle <span>PRO</span></h1>
-      </div>
-      <button class="icon-btn" id="open-dashboard" aria-label="Open dashboard">📊</button>
-    </header>
+<!-- ============ HOME SCREEN ============ -->
+<section id="screen-home" class="screen screen-home active">
+  <header class="topbar">
 
-    <main class="home-main">
+    <!-- Menu Button -->
+    <button class="icon-btn" id="open-info" aria-label="Open info">
+      <svg class="icon" viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" stroke-linejoin="round">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+
+    <div class="brand">
+      <img src="assets/icons/logo.png" alt="">
+      <h1>Number Puzzle <span>PRO</span></h1>
+    </div>
+
+    <!-- Dashboard Button -->
+    <button class="icon-btn" id="open-dashboard" aria-label="Open dashboard">
+      <svg class="icon" viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="3" width="7" height="7" rx="1"/>
+        <rect x="14" y="3" width="7" height="4" rx="1"/>
+        <rect x="14" y="10" width="7" height="11" rx="1"/>
+        <rect x="3" y="13" width="7" height="8" rx="1"/>
+      </svg>
+    </button>
+
+  </header>
+
+  <main class="home-main">
       <!-- LIVE PREVIEW BOARD -->
       <div class="preview-wrap">
         <div class="preview-frame">
