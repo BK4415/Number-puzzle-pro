@@ -1106,10 +1106,11 @@ function updateHUD() {
 
       /* hide loader, show app */
       setTimeout(() => {
-        $('#loading-screen').classList.add('hidden');
-        $('#app').classList.remove('hidden');
-        showScreen('screen-home');
-      }, 350);
+    document.getElementById("loading-screen").classList.add("hidden");
+    document.getElementById("app").classList.remove("hidden");
+
+    showScreen("screen-home");
+}, 350);
 
       /* register SW for PWA */
       if ('serviceWorker' in navigator) {
