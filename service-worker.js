@@ -1,5 +1,5 @@
 /* Number Puzzle Pro — offline cache */
-const CACHE = 'npp-v1';
+const CACHE = 'npp-v1.2';
 const ASSETS = [
   './',
   './index.html',
@@ -14,7 +14,11 @@ const ASSETS = [
   './assets/images/preset-2.jpg',
   './assets/images/preset-3.jpg',
   './assets/images/preset-4.jpg',
-  './assets/images/preset-5.jpg'
+  './assets/images/preset-5.jpg',
+  './assets/sounds/move.wav',
+  './assets/sounds/click.wav',
+  './assets/sounds/win.wav',
+  './assets/sounds/error.wav'
 ];
 
 self.addEventListener('install', e => {
