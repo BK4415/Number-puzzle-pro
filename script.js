@@ -22,7 +22,8 @@
     'assets/images/preset-1.jpg',
     'assets/images/preset-2.jpg',
     'assets/images/preset-3.jpg',
-    'assets/images/preset-4.jpg'
+    'assets/images/preset-4.jpg',
+    'assets/images/preset-5.jpg',
   ];
   const DIFFS        = ['Easy', 'Medium', 'Hard'];
   const DIFF_SHUFFLE = { Easy: 30, Medium: 120, Hard: 300 };
