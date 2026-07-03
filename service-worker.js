@@ -9,7 +9,12 @@ const ASSETS = [
   './assets/icons/logo.png',
   './pages/about.html',
   './pages/guide.html',
-  './pages/privacy.html'
+  './pages/privacy.html',
+  './assets/images/preset-1.jpg',
+  './assets/images/preset-2.jpg',
+  './assets/images/preset-3.jpg',
+  './assets/images/preset-4.jpg',
+  './assets/images/preset-5.jpg'
 ];
 
 self.addEventListener('install', e => {
