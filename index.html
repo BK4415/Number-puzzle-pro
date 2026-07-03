@@ -23,8 +23,6 @@
 <div id="app" class="app hidden">
 
   <!-- LEFT INFO PANEL -->
-  <aside id="info-panel" class="side-panel side-panel-left" aria-label="Information">
-  <!-- LEFT INFO PANEL -->
 <aside id="info-panel" class="side-panel side-panel-left" aria-label="Information">
   <header class="panel-header">
     <h2>Information</h2>
@@ -218,6 +216,11 @@
         <!-- Photo upload (hidden unless Photo mode) -->
         <div class="setting-row photo-row hidden" id="photo-upload-row">
           <label>Your Photo</label>
+          <div class="preset-selector" style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+    <button class="picker-arrow" id="preset-prev">‹</button>
+    <img id="preset-image" src="assets/images/preset-1.jpg" style="width: 60px; height: 60px; border-radius: 8px; object-fit: cover;" />
+    <button class="picker-arrow" id="preset-next">›</button>
+          </div>
           <div class="photo-dropzone" id="photo-dropzone">
             <input type="file" id="photo-input" accept="image/png,image/jpeg,image/webp" hidden />
             <input type="file" id="photo-camera" accept="image/*" capture="environment" hidden />
@@ -411,6 +414,7 @@
       </div>
       <h2 class="congrats">Congratulations!</h2>
       <p class="subtitle">You solved the puzzle.</p>
+      <div id="result-rating" class="stars"></div>
       <div class="result-grid">
         <div><span>Moves</span><strong id="res-moves">0</strong></div>
         <div><span>Time</span><strong id="res-time">00:00</strong></div>
